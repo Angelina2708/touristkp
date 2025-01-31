@@ -10,15 +10,16 @@
   <link rel="stylesheet" href="./css/app.css"> -->
 </head>
 
-<body class="bg-gray-100 text-gray-900">
+<body class=" text-gray-900 bg-white">
   <header class="bg-gray-100 text-gray-900 border-b-2 border-black">
     <nav>
       <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4">
-        <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse bg-white text-black p-4 rounded-none">
+        <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse bg-white text-black p-4 rounded-none">
           <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Tourist</span>
         </a>
 
-        <div id="mega-menu-full" class="items-center font-medium hidden">
+        <!-- забрала звідси hidden -->
+        <div id="mega-menu-full" class="items-center font-medium">
           <ul class="flex  p-4 md:p-0 mt-4 rtl:space-x-reverse">
             <li class="block py-2 px-3 text-gray-900 rounded hover:underline">
               <button id="mega-menu-full-dropdown-button" data-collapse-toggle="mega-menu-full-dropdown"
@@ -30,21 +31,17 @@
                 </svg></button>
             </li>
             <li>
-              <a href=""
-              class="block py-2 px-3 text-gray-900 rounded hover:underline">Карта</a>
+              <a href="" class="block py-2 px-3 text-gray-900 rounded hover:underline">Карта</a>
             </li>
             <li>
               <!-- тут має бути посилання на сторінку з усіма товарами -->
-              <a href="" 
-                class="block py-2 px-3 text-gray-900 rounded hover:underline">Крамниця</a>
+              <a href="" class="block py-2 px-3 text-gray-900 rounded hover:underline">Крамниця</a>
             </li>
             <li>
-              <a href="#"
-              class="block py-2 px-3 text-gray-900 rounded hover:underline">Офіс гостинності</a>
+              <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:underline">Офіс гостинності</a>
             </li>
             <li>
-              <a href="#"
-                class="block py-2 px-3 text-gray-900 rounded hover:underline">Новини</a>
+              <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:underline">Новини</a>
             </li>
           </ul>
         </div>
@@ -202,12 +199,144 @@
     </nav>
   </header>
 
-  <main class="container mx-auto px-4 py-6">
+  <main class="container mx-auto px-4 py-6 ">
     <!-- тут мають бути всі товари і тд -->
+    <div class="container mx-auto p-6 ">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+
+        <!-- Карточка товару -->
+        <div class="border rounded-lg shadow-md p-4 w-full">
+          <div class="relative">
+            <img src="https://placehold.co/600x400/png" alt="Товар" class="w-full h-48 object-cover ">
+            <span class="absolute top-2 left-2 text-black text-s px-2 py-1 bg-white">Ювелірні вироби</span>
+            <button class="absolute bottom-2 right-2 w-10 h-10 border border-black bg-white flex items-center justify-center ">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="black" class="w-6 h-6  hover:fill-red-500 hover:stroke-red-500">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 21l-1.45-1.318C5.4 15.368 2 12.274 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.774-3.4 6.868-8.55 11.182L12 21z"/>
+              </svg>
+            </button> <!-- Сердечко -->
+          </div>
+          <h3 class="mt-3 font-semibold text-lg">Елегантні сережки з оніксу</h3>
+          <p class="text-black-600">450 грн</p>
+          <div class="flex items-center text-black-500 mt-1">
+            <span class="text-black-500 mr-2">5,0</span> <!-- Середня оцінка -->
+            ★★★★★
+            <span class="text-black mx-2">•</span> <!-- Чорна крапка -->
+            <span class="text-black-500 ml-2">(234)</span> <!-- Кількість оцінок -->
+          </div>
+        </div>
+        <!-- Кінець однієї карти товару -->
+         <!-- 2 -->
+        <div class="border rounded-lg shadow-md p-4 w-full">
+          <div class="relative">
+            <img src="https://placehold.co/600x400/png" alt="Товар" class="w-full h-48 object-cover ">
+            <span class="absolute top-2 left-2 text-black text-s px-2 py-1 bg-white">Косметика та здоров'я</span>
+            <button class="absolute bottom-2 right-2 w-10 h-10 border border-black bg-white flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="black" class="w-6 h-6  hover:fill-red-500 hover:stroke-red-500">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 21l-1.45-1.318C5.4 15.368 2 12.274 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.774-3.4 6.868-8.55 11.182L12 21z"/>
+              </svg>
+            </button> <!-- Сердечко -->
+          </div>
+          <h3 class="mt-3 font-semibold text-lg">Натуральний крм для обличчя</h3>
+          <p class="text-black-600">350 грн</p>
+          <div class="flex items-center text-black-500 mt-1">
+            <span class="text-black-500 mr-2">5,0</span> <!-- Середня оцінка -->
+            ★★★★★
+            <span class="text-black mx-2">•</span> <!-- Чорна крапка -->
+            <span class="text-black-500 ml-2">(234)</span> <!-- Кількість оцінок -->
+          </div>
+        </div>
+        <!-- 3 -->
+        <div class="border rounded-lg shadow-md p-4 w-full">
+          <div class="relative">
+            <img src="https://placehold.co/600x400/png" alt="Товар" class="w-full h-48 object-cover ">
+            <span class="absolute top-2 left-2 text-black text-s px-2 py-1 bg-white">Декор та побут</span>
+            <button class="absolute bottom-2 right-2 w-10 h-10 border border-black bg-white flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="black" class="w-6 h-6  hover:fill-red-500 hover:stroke-red-500">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 21l-1.45-1.318C5.4 15.368 2 12.274 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.774-3.4 6.868-8.55 11.182L12 21z"/>
+              </svg>
+            </button> <!-- Сердечко -->
+          </div>
+          <h3 class="mt-3 font-semibold text-lg">Елегантні сережки з оніксу</h3>
+          <p class="text-black-600">450 грн</p>
+          <div class="flex items-center text-black-500 mt-1">
+            <span class="text-black-500 mr-2">5,0</span> <!-- Середня оцінка -->
+            ★★★★★
+            <span class="text-black mx-2">•</span> <!-- Чорна крапка -->
+            <span class="text-black-500 ml-2">(234)</span> <!-- Кількість оцінок -->
+          </div>
+        </div>
+        <!-- 4 -->
+        <div class="border rounded-lg shadow-md p-4 w-full">
+          <div class="relative">
+            <img src="https://placehold.co/600x400/png" alt="Товар" class="w-full h-48 object-cover ">
+            <span class="absolute top-2 left-2 text-black text-s px-2 py-1 bg-white">Ювелірні вироби</span>
+            <button class="absolute bottom-2 right-2 w-10 h-10 border border-black bg-white flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="black" class="w-6 h-6  hover:fill-red-500 hover:stroke-red-500">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 21l-1.45-1.318C5.4 15.368 2 12.274 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.774-3.4 6.868-8.55 11.182L12 21z"/>
+              </svg>
+            </button> <!-- Сердечко -->
+          </div>
+          <h3 class="mt-3 font-semibold text-lg">Елегантні сережки з оніксу</h3>
+          <p class="text-black-600">450 грн</p>
+          <div class="flex items-center text-black-500 mt-1">
+            <span class="text-black-500 mr-2">5,0</span> <!-- Середня оцінка -->
+            ★★★★★
+            <span class="text-black mx-2">•</span> <!-- Чорна крапка -->
+            <span class="text-black-500 ml-2">(234)</span> <!-- Кількість оцінок -->
+          </div>
+        </div>
+        <!-- 5 -->
+        <div class="border rounded-lg shadow-md p-4">
+          <div class="relative">
+            <img src="https://placehold.co/600x400/png" alt="Товар" class="w-full h-48 object-cover ">
+            <span class="absolute top-2 left-2 text-black text-s px-2 py-1 bg-white">Ювелірні вироби</span>
+            <button class="absolute bottom-2 right-2 w-10 h-10 border border-black bg-white flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="black" class="w-6 h-6  hover:fill-red-500 hover:stroke-red-500">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 21l-1.45-1.318C5.4 15.368 2 12.274 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.774-3.4 6.868-8.55 11.182L12 21z"/>
+              </svg>
+            </button> <!-- Сердечко -->
+          </div>
+          <h3 class="mt-3 font-semibold text-lg">Елегантні сережки з оніксу</h3>
+          <p class="text-black-600">450 грн</p>
+          <div class="flex items-center text-black-500 mt-1">
+            <span class="text-black-500 mr-2">5,0</span> <!-- Середня оцінка -->
+            ★★★★★
+            <span class="text-black mx-2">•</span> <!-- Чорна крапка -->
+            <span class="text-black-500 ml-2">(234)</span> <!-- Кількість оцінок -->
+          </div>
+        </div>
+        
+
+      </div>
+
+      <!-- Пагінація -->
+      <div class="flex justify-between items-center mt-6 px-4">
+        <!-- Лічильник товарів -->
+        <p class="text-gray-600">30 товарів з 20 234</p>
+        <!-- Пагінація -->
+        <nav class="flex items-center space-x-2">
+          <!-- Кнопка "Назад" -->
+          <a href="#" class="px-3 py-2 text-gray-400 hover:text-black">←</a>
+          <!-- Номери сторінок -->
+          <a href="#" class="px-3 py-2 bg-black text-white">1</a>
+          <a href="#" class="px-3 py-2 text-gray-600 hover:bg-gray-300">2</a>
+          <a href="#" class="px-3 py-2 text-gray-600 hover:bg-gray-300">3</a>
+          <a href="#" class="px-3 py-2 text-gray-600 hover:bg-gray-300">4</a>
+          <a href="#" class="px-3 py-2 text-gray-600 hover:bg-gray-300">5</a>
+          <!-- Кнопка "Вперед" -->
+          <a href="#" class="px-3 py-2 text-gray-400 hover:text-black">→</a>
+        </nav>
+      </div>
+      
+    </div>
+
   </main>
+
+
   <footer>
     <!-- тут має бути підвал сайту -->
   </footer>
+
 </body>
 
 </html>
