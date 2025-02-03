@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Туристичний сайт</title>
+    <!-- <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="./css/app.css"> -->
+</head>
+
+<body class=" text-gray-900 bg-white min-h-screen flex flex-col">
+    <header class="bg-gray-100 text-gray-900 ">
+        <nav class="border-b-2 border-black">
+            <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4">
+                <a href="#"
+                    class="flex items-center space-x-3 rtl:space-x-reverse bg-white text-black p-4 rounded-none">
+                    <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Tourist</span>
+                </a>
+
+                <!-- забрала звідси hidden -->
+                <div id="mega-menu-full" class="items-center font-medium">
+                    <ul class="flex  p-4 md:p-0 mt-4 rtl:space-x-reverse">
+                        <li class="block py-2 px-3 text-gray-900 rounded hover:underline">
+                            <button id="mega-menu-full-dropdown-button" data-collapse-toggle="mega-menu-full-dropdown"
+                                class="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded md:w-auto hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700">Досліджуй
+                                місто <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="m1 1 4 4 4-4"></path>
+                                </svg></button>
+                        </li>
+                        <li>
+                            <a href="" class="block py-2 px-3 text-gray-900 rounded hover:underline">Карта</a>
+                        </li>
+                        <li>
+                            <!-- тут має бути посилання на сторінку з усіма товарами -->
+                            <a href="" class="block py-2 px-3 text-gray-900 rounded hover:underline">Крамниця</a>
+                        </li>
+                        <li>
+                            <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:underline">Офіс
+                                гостинності</a>
+                        </li>
+                        <li>
+                            <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:underline">Новини</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="flex items-center gap-2">
+
+                    <button type="button" class="flex text-sm rounded-full md:me-0 p-2 hover:bg-gray-100"
+                        id="user-menu-button" aria-expanded="false" data-dropdown-toggle="user-dropdown"
+                        data-dropdown-placement="bottom">
+                        <span class="sr-only">Open user menu</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z">
+                            </path>
+                        </svg>
+
+                    </button>
+
+                    <div class="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700 dark:divide-gray-600"
+                        id="user-dropdown"
+                        style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(1102px, 66px, 0px);"
+                        data-popper-placement="bottom">
+
+                        <ul class="py-2" aria-labelledby="user-menu-button">
+                            <li>
+                                <a href="http://dz.kamianets.travel/login"
+                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Вхід</a>
+                            </li>
+                            <li>
+                                <a href="http://dz.kamianets.travel/register"
+                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Реєстрація</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <button data-collapse-toggle="mega-menu-full" type="button"
+                        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+                        aria-controls="mega-menu-full" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 17 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M1 1h15M1 7h15M1 13h15"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div>
+                    <button class="bg-black text-white font-bold py-2 px-4">Створити подорож</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <main class="max-w-6xl mx-auto p-6 bg-white mt-6 shadow-md">
+        <div class="max-w-6xl mx-auto bg-white p-6 shadow-md">
+            <div class="grid grid-cols-2 gap-6">
+                <div class=" items-center justify-center">
+                    <img src="https://placehold.co/600x400/png" alt="Товар" class="object-cover ">
+                </div>
+                <div>
+                    <h1 class="text-2xl font-bold">Елегантні сережки з оніксу та срібла</h1>
+                    <div class="flex items-center text-sm mt-2">
+                        <span class="mr-2">5.0 ★★★★★ (234)</span>
+                    </div>
+                    <p class="mt-2 text-black-700">Стильні та витончені сережки з натурального оніксу в обрамленні
+                        срібла
+                        925 проби.</p>
+                    <p class="mt-4 text-xl font-semibold">450 грн</p>
+                    <button class="w-full border mt-4 py-2 flex items-center justify-center space-x-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                            stroke="black" class="w-6 h-6 hover:fill-red-500 hover:stroke-red-500">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M12 21l-1.45-1.318C5.4 15.368 2 12.274 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.774-3.4 6.868-8.55 11.182L12 21z" />
+                        </svg>
+                        <span>Додати у обране</span>
+                    </button>
+
+                    <button class="w-full bg-black text-white py-2 mt-2">Замовити</button>
+                    <div class="mt-4 text-sm text-black-700">Продавець: <span class="font-bold">Історія в камені</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-2 gap-6 mt-6">
+                <div>
+                    <div class="bg-white p-4 border mb-4">
+                        <h2 class="text-lg font-bold">Опис</h2>
+                        <p class="mt-2 text-black-700">Елегантність у кожній деталі! Сережки з оніксу та срібла ідеально
+                            підходять для будь-якого стилю.</p>
+                    </div>
+                    <div class="bg-white p-4 border">
+                        <h2 class="text-lg font-bold">Характеристики</h2>
+                        <ul class="list-none list-inside text-gray-700 mt-2">
+                            <li class="flex justify-between">
+                                <span>Матеріал</span>
+                                <span class="text-left">срібло 925 проби</span>
+                            </li>
+                            <li class="flex justify-between">
+                                <span>Камінь</span>
+                                <span class="text-left">натуральний онікс</span>
+                            </li>
+                            <li class="flex justify-between">
+                                <span>Розмір</span>
+                                <span class="text-left">3 см (довжина)</span>
+                            </li>
+                            <li class="flex justify-between">
+                                <span>Тип застібки</span>
+                                <span class="text-left">англійський замок</span>
+                            </li>
+                            <li class="flex justify-between">
+                                <span>Вага</span>
+                                <span class="text-left">5 г</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="flex justify-between mt-4" >
+                        <p class="text-2xl font-bold">Відгуки</p>
+                        <div>
+                            <button class="bg-black text-white font-bold py-2 px-4">Залишити відгук</button>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-4 border mt-6">
+                        <p class="mt-2 text-black-700">5.0 ★★★★★ </p>
+                        <p class="mt-2 text-black-700">Це була неймовірна подорож! Чудові краєвиди і доступний маршрут.
+                            Рекомендую для тих, хто хоче відпочити на природі</p>
+                        <div class="flex justify-between mt-4">
+                            <p>Анна Литвин</p>
+                            <p>21.05.2024</p>
+                        </div>
+                    </div>
+                    <div class="bg-white p-4 border mt-6">
+                        <p class="mt-2 text-black-700">5.0 ★★★★★ </p>
+                        <p class="mt-2 text-black-700">Це була неймовірна подорож! Чудові краєвиди і доступний маршрут.
+                            Рекомендую для тих, хто хоче відпочити на природі</p>
+                        <div class="flex justify-between mt-4">
+                            <p>Анна Литвин</p>
+                            <p>21.05.2024</p>
+                        </div>
+                    </div>
+                    <div class="bg-white p-4 border mt-6">
+                        <p class="mt-2 text-black-700">5.0 ★★★★★ </p>
+                        <p class="mt-2 text-black-700">Це була неймовірна подорож! Чудові краєвиди і доступний маршрут.
+                            Рекомендую для тих, хто хоче відпочити на природі</p>
+                        <div class="flex justify-between mt-4">
+                            <p>Анна Литвин</p>
+                            <p>21.05.2024</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-600 text-white p-6 mt-auto">
+        <div class="max-w-7xl mx-auto flex justify-between items-start">
+            <!-- Логотип -->
+            <div>
+                <button class="bg-white text-black font-bold py-2 px-4">Tourist</button>
+            </div>
+
+            <!-- Колонки з посиланнями -->
+            <div class="flex space-x-16">
+                <div class="space-y-2">
+                    <p class="font-semibold">Локації</p>
+                    <p>Маршрути</p>
+                    <p>Події</p>
+                    <p>Тури</p>
+                </div>
+                <div class="space-y-2">
+                    <p class="font-semibold">Крамниця</p>
+                    <p>Офіс гостинності</p>
+                    <p>Новини</p>
+                </div>
+                <div class="space-y-2">
+                    <p class="font-semibold">Карта</p>
+                    <p>Створити подорож</p>
+                </div>
+            </div>
+
+            <!-- Кнопка створення подорожі -->
+            <div>
+                <button class="bg-black text-white font-bold py-2 px-4">Створити подорож</button>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
