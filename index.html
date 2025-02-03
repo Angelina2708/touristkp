@@ -11,8 +11,8 @@
 </head>
 
 <body class=" text-gray-900 bg-white">
-  <header class="bg-gray-100 text-gray-900 border-b-2 border-black">
-    <nav>
+  <header class="bg-gray-100 text-gray-900 ">
+    <nav class="border-b-2 border-black">
       <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4">
         <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse bg-white text-black p-4 rounded-none">
           <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Tourist</span>
@@ -88,11 +88,27 @@
           </button>
         </div>
 
+        <div>
+          <button class="bg-black text-white font-bold py-2 px-4">Створити подорож</button>
+        </div>
+
       </div>
+      
     </nav>
+
+
+    <div class="text-center mt-10">
+      <p class="text-4xl font-bold">Унікальні товари для кожного</p>
+      <p class="text-black-600 text-l mt-3 pb-10">
+        Місце для покупок унікальних продуктів та сувенірів від місцевих майстрів
+      </p>
+    </div>
+    
+    
+
   </header>
 
-  <main class="container mx-auto px-4 py-6 ">
+  <main class="container mx-auto px-4 py-6 pb-20">
 
     <!--  фільтри з чекбоксами -->
     <div class="flex space-x-2 mx-auto p-6">
@@ -396,9 +412,39 @@
   </main>
 
 
-  <footer>
-    <!-- тут має бути підвал сайту -->
+  <footer class="bg-gray-600 text-white p-6">
+    <div class="max-w-7xl mx-auto flex justify-between items-start">
+      <!-- Логотип -->
+      <div>
+        <button class="bg-white text-black font-bold py-2 px-4">Tourist</button>
+      </div>
+  
+      <!-- Колонки з посиланнями -->
+      <div class="flex space-x-16">
+        <div class="space-y-2">
+          <p class="font-semibold">Локації</p>
+          <p>Маршрути</p>
+          <p>Події</p>
+          <p>Тури</p>
+        </div>
+        <div class="space-y-2">
+          <p class="font-semibold">Крамниця</p>
+          <p>Офіс гостинності</p>
+          <p>Новини</p>
+        </div>
+        <div class="space-y-2">
+          <p class="font-semibold">Карта</p>
+          <p>Створити подорож</p>
+        </div>
+      </div>
+  
+      <!-- Кнопка створення подорожі -->
+      <div>
+        <button class="bg-black text-white font-bold py-2 px-4">Створити подорож</button>
+      </div>
+    </div>
   </footer>
+  
 
 </body>
 
