@@ -104,37 +104,221 @@
   <main class="container mx-auto px-4 py-6 pb-20">
 
     <!--  фільтри з чекбоксами -->
-    <div class="flex space-x-2 mx-auto p-6">
-      <label class="flex items-center border px-4 py-2 cursor-pointer hover:bg-gray-300">
-        <input type="checkbox" class="hidden" checked>
-        Всі товари
-      </label>
+    <div class="flex space-x-4 p-4">
+      <!-- Перша категорія -->
+      <div class="relative inline-block">
+        <button id="dropdownButton1" class="border px-4 py-2 hover:bg-gray-300 flex items-center w-48 justify-between">
+          Всі товари
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+          </svg>
+      </button>      
+        <div id="dropdownMenu1"
+          class="hidden absolute left-0 mt-2 bg-white border rounded shadow-lg w-48 z-10 max-h-40 overflow-y-auto">
+          <label class="flex items-center px-4 py-2 cursor-pointer hover:bg-gray-200 w-full">
+            <input type="checkbox" class="h-4 w-4">
+            <span class="ml-2">Смартфони</span>
+          </label>
+          <label class="flex items-center px-4 py-2 cursor-pointer hover:bg-gray-200 w-full">
+            <input type="checkbox" class="h-4 w-4">
+            <span class="ml-2">Ноутбуки</span>
+          </label>
+          <label class="flex items-center px-4 py-2 cursor-pointer hover:bg-gray-200 w-full">
+            <input type="checkbox" class="h-4 w-4">
+            <span class="ml-2">Телевізори</span>
+          </label>
+          <label class="flex items-center px-4 py-2 cursor-pointer hover:bg-gray-200 w-full">
+            <input type="checkbox" class="h-4 w-4">
+            <span class="ml-2">Гаджети</span>
+          </label>
+          <label class="flex items-center px-4 py-2 cursor-pointer hover:bg-gray-200 w-full">
+            <input type="checkbox" class="h-4 w-4">
+            <span class="ml-2">Аксесуари</span>
+          </label>
+        </div>
+      </div>
+      <!-- друга категорія -->
+      <div class="relative inline-block">
+        <button id="dropdownButton2" class="border px-4 py-2 hover:bg-gray-300 flex items-center w-48 justify-between">
+          Одяг та аксесуари
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+          </svg>
+      </button>      
+        <div id="dropdownMenu2"
+          class="hidden absolute left-0 mt-2 bg-white border shadow-lg w-48 z-10 max-h-40 overflow-y-auto">
+          <label class="flex items-center px-4 py-2 cursor-pointer hover:bg-gray-200 w-full">
+            <input type="checkbox" class="h-4 w-4">
+            <span class="ml-2">Плаття</span>
+          </label>
+          <label class="flex items-center px-4 py-2 cursor-pointer hover:bg-gray-200 w-full">
+            <input type="checkbox" class="h-4 w-4">
+            <span class="ml-2">Сережки</span>
+          </label>
+          <label class="flex items-center px-4 py-2 cursor-pointer hover:bg-gray-200 w-full">
+            <input type="checkbox" class="h-4 w-4">
+            <span class="ml-2">Штани</span>
+          </label>
+          <label class="flex items-center px-4 py-2 cursor-pointer hover:bg-gray-200 w-full">
+            <input type="checkbox" class="h-4 w-4">
+            <span class="ml-2">Жилетки</span>
+          </label>
+          <label class="flex items-center px-4 py-2 cursor-pointer hover:bg-gray-200 w-full">
+            <input type="checkbox" class="h-4 w-4">
+            <span class="ml-2">Ремні</span>
+          </label>
+        </div>
+      </div>
+      <!-- третя категорія -->
+      <div class="relative inline-block">
+        <button id="dropdownButton3" class="border px-4 py-2 hover:bg-gray-300 flex items-center w-48 justify-between">
+          Косметика та здоров'я
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+          </svg>
+      </button>      
+        <div id="dropdownMenu3"
+          class="hidden absolute left-0 mt-2 bg-white border shadow-lg w-48 z-10 max-h-40 overflow-y-auto">
+          <label class="flex items-center px-4 py-2 cursor-pointer hover:bg-gray-200 w-full">
+            <input type="checkbox" class="h-4 w-4">
+            <span class="ml-2">Крем для обличчя</span>
+          </label>
+          <label class="flex items-center px-4 py-2 cursor-pointer hover:bg-gray-200 w-full">
+            <input type="checkbox" class="h-4 w-4">
+            <span class="ml-2">Маски кислотні</span>
+          </label>
+          <label class="flex items-center px-4 py-2 cursor-pointer hover:bg-gray-200 w-full">
+            <input type="checkbox" class="h-4 w-4">
+            <span class="ml-2">Засоби для рук</span>
+          </label>
+          <label class="flex items-center px-4 py-2 cursor-pointer hover:bg-gray-200 w-full">
+            <input type="checkbox" class="h-4 w-4">
+            <span class="ml-2">Крем для обличчя</span>
+          </label>
+          <label class="flex items-center px-4 py-2 cursor-pointer hover:bg-gray-200 w-full">
+            <input type="checkbox" class="h-4 w-4">
+            <span class="ml-2">Маски кислотні</span>
+          </label>
+          <label class="flex items-center px-4 py-2 cursor-pointer hover:bg-gray-200 w-full">
+            <input type="checkbox" class="h-4 w-4">
+            <span class="ml-2">Засоби для рук</span>
+          </label>
+        </div>
+      </div>
+      <!-- 1 -->
+      <div class="relative inline-block">
+        <button id="dropdownButton4" class="border px-4 py-2 hover:bg-gray-300 flex items-center w-48 justify-between">
+          Всі товари
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+          </svg>
+      </button>      
+        <div id="dropdownMenu4"
+          class="hidden absolute left-0 mt-2 bg-white border rounded shadow-lg w-48 z-10 max-h-40 overflow-y-auto">
+          <label class="flex items-center px-4 py-2 cursor-pointer hover:bg-gray-200 w-full">
+            <input type="checkbox" class="h-4 w-4">
+            <span class="ml-2">Смартфони</span>
+          </label>
+          <label class="flex items-center px-4 py-2 cursor-pointer hover:bg-gray-200 w-full">
+            <input type="checkbox" class="h-4 w-4">
+            <span class="ml-2">Ноутбуки</span>
+          </label>
+          <label class="flex items-center px-4 py-2 cursor-pointer hover:bg-gray-200 w-full">
+            <input type="checkbox" class="h-4 w-4">
+            <span class="ml-2">Телевізори</span>
+          </label>
+          <label class="flex items-center px-4 py-2 cursor-pointer hover:bg-gray-200 w-full">
+            <input type="checkbox" class="h-4 w-4">
+            <span class="ml-2">Гаджети</span>
+          </label>
+          <label class="flex items-center px-4 py-2 cursor-pointer hover:bg-gray-200 w-full">
+            <input type="checkbox" class="h-4 w-4">
+            <span class="ml-2">Аксесуари</span>
+          </label>
+        </div>
+      </div>
+      <!-- 2 -->
+      <div class="relative inline-block">
+        <button id="dropdownButton5" class="border px-4 py-2 hover:bg-gray-300 flex items-center w-48 justify-between">
+          Одяг та аксесуари
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+          </svg>
+      </button>      
+        <div id="dropdownMenu5"
+          class="hidden absolute left-0 mt-2 bg-white border shadow-lg w-48 z-10 max-h-40 overflow-y-auto">
+          <label class="flex items-center px-4 py-2 cursor-pointer hover:bg-gray-200 w-full">
+            <input type="checkbox" class="h-4 w-4">
+            <span class="ml-2">Плаття</span>
+          </label>
+          <label class="flex items-center px-4 py-2 cursor-pointer hover:bg-gray-200 w-full">
+            <input type="checkbox" class="h-4 w-4">
+            <span class="ml-2">Сережки</span>
+          </label>
+          <label class="flex items-center px-4 py-2 cursor-pointer hover:bg-gray-200 w-full">
+            <input type="checkbox" class="h-4 w-4">
+            <span class="ml-2">Штани</span>
+          </label>
+          <label class="flex items-center px-4 py-2 cursor-pointer hover:bg-gray-200 w-full">
+            <input type="checkbox" class="h-4 w-4">
+            <span class="ml-2">Жилетки</span>
+          </label>
+          <label class="flex items-center px-4 py-2 cursor-pointer hover:bg-gray-200 w-full">
+            <input type="checkbox" class="h-4 w-4">
+            <span class="ml-2">Ремні</span>
+          </label>
+        </div>
+      </div>
+      <!-- 6 -->
+      <div class="relative inline-block">
+        <button id="dropdownButton6" class="border px-4 py-2 hover:bg-gray-300 flex items-center w-48 justify-between">
+          Косметика та здоров'я
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+          </svg>
+      </button>      
+        <div id="dropdownMenu6"
+          class="hidden absolute left-0 mt-2 bg-white border shadow-lg w-48 z-10 max-h-40 overflow-y-auto">
+          <label class="flex items-center px-4 py-2 cursor-pointer hover:bg-gray-200 w-full">
+            <input type="checkbox" class="h-4 w-4">
+            <span class="ml-2">Крем для обличчя</span>
+          </label>
+          <label class="flex items-center px-4 py-2 cursor-pointer hover:bg-gray-200 w-full">
+            <input type="checkbox" class="h-4 w-4">
+            <span class="ml-2">Маски кислотні</span>
+          </label>
+          <label class="flex items-center px-4 py-2 cursor-pointer hover:bg-gray-200 w-full">
+            <input type="checkbox" class="h-4 w-4">
+            <span class="ml-2">Засоби для рук</span>
+          </label>
+          <label class="flex items-center px-4 py-2 cursor-pointer hover:bg-gray-200 w-full">
+            <input type="checkbox" class="h-4 w-4">
+            <span class="ml-2">Крем для обличчя</span>
+          </label>
+          <label class="flex items-center px-4 py-2 cursor-pointer hover:bg-gray-200 w-full">
+            <input type="checkbox" class="h-4 w-4">
+            <span class="ml-2">Маски кислотні</span>
+          </label>
+          <label class="flex items-center px-4 py-2 cursor-pointer hover:bg-gray-200 w-full">
+            <input type="checkbox" class="h-4 w-4">
+            <span class="ml-2">Засоби для рук</span>
+          </label>
+        </div>
+      </div>
 
-      <label class="flex items-center border  px-4 py-2 cursor-pointer hover:bg-gray-300">
-        <input type="checkbox" class="hidden">
-        Одяг та аксесуари
-      </label>
 
-      <label class="flex items-center border  px-4 py-2 cursor-pointer hover:bg-gray-300">
-        <input type="checkbox" class="hidden">
-        Косметика та здоров'я
-      </label>
-
-      <label class="flex items-center border px-4 py-2 cursor-pointer hover:bg-gray-300">
-        <input type="checkbox" class="hidden">
-        Ювелірні вироби
-      </label>
-
-      <label class="flex items-center border px-4 py-2 cursor-pointer hover:bg-gray-300">
-        <input type="checkbox" class="hidden">
-        Декор та побут
-      </label>
-
-      <label class="flex items-center border px-4 py-2 cursor-pointer hover:bg-gray-300">
-        <input type="checkbox" class="hidden">
-        Книги та творчість
-      </label>
     </div>
+
+    <script>
+      document.querySelectorAll('[id^="dropdownButton"]').forEach(button => {
+        button.addEventListener('click', function () {
+          const menuId = this.id.replace('Button', 'Menu');
+          document.getElementById(menuId).classList.toggle('hidden');
+        });
+      });
+    </script>
+
+
 
     <!-- фільтри інші -->
     <div class="flex space-x-2 mx-auto p-6 justify-between items-center mt-6 px-4">
@@ -174,7 +358,8 @@
           <div class="relative">
             <img src="https://placehold.co/600x400/png" alt="Товар" class="w-full h-48 object-cover">
             <span class="absolute top-2 left-2 text-black text-s px-2 py-1 bg-white">Ювелірні вироби</span>
-            <button class="absolute bottom-2 right-2 w-10 h-10 border border-black bg-white flex items-center justify-center">
+            <button
+              class="absolute bottom-2 right-2 w-10 h-10 border border-black bg-white flex items-center justify-center">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="black"
                 class="w-6 h-6 hover:fill-red-500 hover:stroke-red-500">
                 <path stroke-linecap="round" stroke-linejoin="round"
@@ -197,7 +382,8 @@
           <div class="relative">
             <img src="https://placehold.co/600x400/png" alt="Товар" class="w-full h-48 object-cover">
             <span class="absolute top-2 left-2 text-black text-s px-2 py-1 bg-white">Ювелірні вироби</span>
-            <button class="absolute bottom-2 right-2 w-10 h-10 border border-black bg-white flex items-center justify-center">
+            <button
+              class="absolute bottom-2 right-2 w-10 h-10 border border-black bg-white flex items-center justify-center">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="black"
                 class="w-6 h-6 hover:fill-red-500 hover:stroke-red-500">
                 <path stroke-linecap="round" stroke-linejoin="round"
@@ -219,7 +405,8 @@
           <div class="relative">
             <img src="https://placehold.co/600x400/png" alt="Товар" class="w-full h-48 object-cover">
             <span class="absolute top-2 left-2 text-black text-s px-2 py-1 bg-white">Ювелірні вироби</span>
-            <button class="absolute bottom-2 right-2 w-10 h-10 border border-black bg-white flex items-center justify-center">
+            <button
+              class="absolute bottom-2 right-2 w-10 h-10 border border-black bg-white flex items-center justify-center">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="black"
                 class="w-6 h-6 hover:fill-red-500 hover:stroke-red-500">
                 <path stroke-linecap="round" stroke-linejoin="round"
@@ -241,7 +428,8 @@
           <div class="relative">
             <img src="https://placehold.co/600x400/png" alt="Товар" class="w-full h-48 object-cover">
             <span class="absolute top-2 left-2 text-black text-s px-2 py-1 bg-white">Ювелірні вироби</span>
-            <button class="absolute bottom-2 right-2 w-10 h-10 border border-black bg-white flex items-center justify-center">
+            <button
+              class="absolute bottom-2 right-2 w-10 h-10 border border-black bg-white flex items-center justify-center">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="black"
                 class="w-6 h-6 hover:fill-red-500 hover:stroke-red-500">
                 <path stroke-linecap="round" stroke-linejoin="round"
@@ -263,7 +451,8 @@
           <div class="relative">
             <img src="https://placehold.co/600x400/png" alt="Товар" class="w-full h-48 object-cover">
             <span class="absolute top-2 left-2 text-black text-s px-2 py-1 bg-white">Ювелірні вироби</span>
-            <button class="absolute bottom-2 right-2 w-10 h-10 border border-black bg-white flex items-center justify-center">
+            <button
+              class="absolute bottom-2 right-2 w-10 h-10 border border-black bg-white flex items-center justify-center">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="black"
                 class="w-6 h-6 hover:fill-red-500 hover:stroke-red-500">
                 <path stroke-linecap="round" stroke-linejoin="round"
@@ -285,7 +474,8 @@
           <div class="relative">
             <img src="https://placehold.co/600x400/png" alt="Товар" class="w-full h-48 object-cover">
             <span class="absolute top-2 left-2 text-black text-s px-2 py-1 bg-white">Ювелірні вироби</span>
-            <button class="absolute bottom-2 right-2 w-10 h-10 border border-black bg-white flex items-center justify-center">
+            <button
+              class="absolute bottom-2 right-2 w-10 h-10 border border-black bg-white flex items-center justify-center">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="black"
                 class="w-6 h-6 hover:fill-red-500 hover:stroke-red-500">
                 <path stroke-linecap="round" stroke-linejoin="round"
@@ -307,7 +497,8 @@
           <div class="relative">
             <img src="https://placehold.co/600x400/png" alt="Товар" class="w-full h-48 object-cover">
             <span class="absolute top-2 left-2 text-black text-s px-2 py-1 bg-white">Ювелірні вироби</span>
-            <button class="absolute bottom-2 right-2 w-10 h-10 border border-black bg-white flex items-center justify-center">
+            <button
+              class="absolute bottom-2 right-2 w-10 h-10 border border-black bg-white flex items-center justify-center">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="black"
                 class="w-6 h-6 hover:fill-red-500 hover:stroke-red-500">
                 <path stroke-linecap="round" stroke-linejoin="round"
@@ -329,7 +520,8 @@
           <div class="relative">
             <img src="https://placehold.co/600x400/png" alt="Товар" class="w-full h-48 object-cover">
             <span class="absolute top-2 left-2 text-black text-s px-2 py-1 bg-white">Ювелірні вироби</span>
-            <button class="absolute bottom-2 right-2 w-10 h-10 border border-black bg-white flex items-center justify-center">
+            <button
+              class="absolute bottom-2 right-2 w-10 h-10 border border-black bg-white flex items-center justify-center">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="black"
                 class="w-6 h-6 hover:fill-red-500 hover:stroke-red-500">
                 <path stroke-linecap="round" stroke-linejoin="round"
@@ -351,7 +543,8 @@
           <div class="relative">
             <img src="https://placehold.co/600x400/png" alt="Товар" class="w-full h-48 object-cover">
             <span class="absolute top-2 left-2 text-black text-s px-2 py-1 bg-white">Ювелірні вироби</span>
-            <button class="absolute bottom-2 right-2 w-10 h-10 border border-black bg-white flex items-center justify-center">
+            <button
+              class="absolute bottom-2 right-2 w-10 h-10 border border-black bg-white flex items-center justify-center">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="black"
                 class="w-6 h-6 hover:fill-red-500 hover:stroke-red-500">
                 <path stroke-linecap="round" stroke-linejoin="round"
