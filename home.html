@@ -5,9 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Ysabeau+Infant:wght@400;700&display=swap" rel="stylesheet">
+
     <style type="text/tailwindcss">
         @import url('https://fonts.googleapis.com/css2?family=Ysabeau+Infant:ital,wght@0,1..1000;1,1..1000&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
 
         @import "tailwindcss";
 
@@ -140,9 +143,27 @@
     <title>Туристичний сайт</title>
 </head>
 
-<body>
-    <a href="#"
-        class="font-semibold text-sm leading-[143%] text-[var(--color-dark-900)] hover:text-[var(--color-dark-600)] block">Посилання</a>
+<body class="flex items-center justify-center min-h-screen">
+
+    <div class="relative bg-[var(--color-events-400)] rounded-2xl flex items-center justify-between text-center text-white w-[1284px] h-[276px] rounded-[16px] gap-[24px]">
+        <div class="w-[200px] h-full object-cover rounded-2xl">
+            <img src="./img/balls.svg" alt="Hot Air Balloon" class="h-full w-full object-cover">
+        </div>
+        <div class="relative z-10 flex flex-col items-center">
+            <h2 class="text-2xl font-bold">Концерти, виставки, театральні виступи – обирайте своє натхнення</h2>
+            <button
+                class="mt-4 px-5 py-2 bg-white text-orange-500 rounded-lg flex items-center gap-2 shadow-md hover:bg-gray-100 transition">
+                Вибрати подію
+                <span>&#8599;</span>
+            </button>
+        </div>
+        <div class="w-[200px] h-full object-cover rounded-2xl">
+            <img src="./img/balls-r.svg" alt="#" class="h-full w-full object-cover">
+        </div>
+    </div>
+
+
 </body>
+
 
 </html>

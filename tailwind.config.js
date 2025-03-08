@@ -4,7 +4,11 @@ module.exports = {
         "./*.html",
     ],
     theme: {
-        extend: {},
+        extend: {
+            fontFamily: {
+                ysabeau: ["'Ysabeau Infant'", "sans-serif"], 
+            },
+        },
     },
     plugins: [],
-} 
+}
