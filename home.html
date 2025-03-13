@@ -143,16 +143,17 @@
     <title>Туристичний сайт</title>
 </head>
 
-<body class="flex items-center justify-center min-h-screen">
+<body class="flex flex-col items-center justify-center min-h-screen gap-6 p-4">
 
+    /*проблема що фото кулі обрізається */
+    /* оранжевий блок */
     <div class="relative bg-[var(--color-events-400)] rounded-2xl flex items-center justify-between text-center text-white w-[1284px] h-[276px] rounded-[16px] gap-[24px]">
         <div class="w-[200px] h-full object-cover rounded-2xl">
             <img src="./img/balls.svg" alt="Hot Air Balloon" class="h-full w-full object-cover">
         </div>
         <div class="relative z-10 flex flex-col items-center">
             <h2 class="text-2xl font-bold">Концерти, виставки, театральні виступи – обирайте своє натхнення</h2>
-            <button
-                class="mt-4 px-5 py-2 bg-white text-orange-500 rounded-lg flex items-center gap-2 shadow-md hover:bg-gray-100 transition">
+            <button class="mt-4 px-5 py-2 bg-white text-[var(--color-events-400)] rounded-lg flex items-center gap-2 transition">
                 Вибрати подію
                 <span>&#8599;</span>
             </button>
@@ -161,6 +162,23 @@
             <img src="./img/balls-r.svg" alt="#" class="h-full w-full object-cover">
         </div>
     </div>
+
+    /* голубенький блок */
+    <div class="relative bg-[var(--color-routs-500)] rounded-2xl flex items-center justify-between w-[1284px] h-[276px]">
+        <div class="flex-1 pl-10">
+            <h2 class="text-2xl font-bold text-white leading-snug">
+                Від пішохідних прогулянок до <br> екскурсій на велосипеді
+            </h2>
+            <button class="mt-4 px-5 py-2 bg-white text-[var(--color--routs-500)] rounded-lg flex items-center gap-2 transition">
+                Дивитись всі
+                <span class="ml-2 text-white rounded-lg w-[32px] h-[32px] bg-[var(--color-routs-500)]">&#8599;</span>
+            </button>
+        </div>
+        <div class="relative w-[250px] h-full ">
+            <img src="./img/blue.svg" alt="Декоративні точки" class="absolute w-full h-full object-cover overflow-hidden">
+        </div>
+    </div>
+
 
 
 </body>
