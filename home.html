@@ -146,7 +146,8 @@
 <body class="flex flex-col items-center justify-center min-h-screen gap-6 p-4">
 
     <!-- оранжевий блок -->
-    <div class="relative bg-events-400 rounded-2xl flex items-center justify-between text-center text-white w-321 h-69 rounded-4 gap-6 overflow-hidden">
+    <div
+        class="relative bg-events-400 rounded-2xl flex items-center justify-between text-center text-white w-321 h-69 rounded-4 gap-6 overflow-hidden">
         <div class="rounded-2xl">
             <img src="./img/balls.svg" alt="Hot Air Balloon" class="h-full w-full">
         </div>
@@ -174,10 +175,58 @@
             </button>
         </div>
         <div class="relative w-62.5 h-full ">
-            <img src="./img/blue.svg" alt="Декоративні точки" class="absolute w-full h-full object-cover overflow-hidden">
+            <img src="./img/blue.svg" alt="Декоративні точки"
+                class="absolute w-full h-full object-cover overflow-hidden">
         </div>
     </div>
 
+
+    <!-- блок з новинами-->
+    <div class="bg-base-50 w-360 h-195 pt-29 pb-29 pl-24 pr-24 rounded-t-8">
+        <h2 class="text-2xl font-bold text-black leading-snug mb-4">Новини</h2>
+
+        <div class="flex gap-6">
+            <div class="relative w-[600px] h-[350px]  overflow-hidden">
+                <img src="./img/blue.svg" alt="Декоративні точки" class="absolute w-full h-full object-cover">
+                <div class="absolute inset-0 bg-black/40 flex flex-col justify-end p-6 text-white">
+                    <h3 class="text-lg font-semibold">Історія Кам'янця-Подільського</h3>
+                    <div class="flex items-center justify-between mt-4">
+                        <button
+                            class="px-5 py-2 bg-white text-[var(--color-routs-500)] rounded-lg flex items-center gap-2 transition hover:bg-gray-300">
+                            Читати
+                            <span
+                                class="ml-2 bg-black text-white rounded-lg w-[32px] h-[32px] flex items-center justify-center">
+                                ↗
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-col radius-4 w-153 h-35 bg-dark-0">
+                <div class="flex items-center bg-white p-4  shadow-md">
+                    <img src="./img/blue.svg" alt="Новий парк у місті" class="w-24 h-24 object-cover">
+                    <div class="ml-4">
+                        <h4 class="text-lg font-semibold">Новий парк у центрі міста</h4>
+                        <p class="text-sm text-gray-600">Міська програма екології та благоустрою...</p>
+                        <p class="text-xs text-gray-400">01 грудня, 2024 • 20</p>
+                    </div>
+                </div>
+
+
+
+
+                <div class="hidden md:block">
+                    <button
+                        class="mt-4 px-5 py-2 bg-white text-[var(--color-routs-500)] rounded-lg flex items-center gap-2 transition hover:bg-gray-300">
+                        Дивитись всі
+                        <span
+                            class="ml-2 text-white rounded-lg w-[32px] h-[32px] flex items-center justify-center bg-black">
+                            ↗
+                        </span>
+                    </button>
+                </div>
+            </div>
 
 
 </body>
