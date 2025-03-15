@@ -158,7 +158,7 @@
                 <span>&#8599;</span>
             </button>
         </div>
-        <div class="w-[200px] h-full object-cover rounded-2xl">
+        <div class="w-50 h-full object-cover rounded-2xl">
             <img src="./img/balls-r.svg" alt="#" class="h-full w-full object-cover">
         </div>
     </div>
@@ -183,49 +183,54 @@
 
     <!-- блок з новинами-->
     <div class="bg-base-50 w-360 h-195 pt-29 pb-29 pl-24 pr-24 rounded-t-8">
-        <h2 class="text-2xl font-bold text-black leading-snug mb-4">Новини</h2>
+        <div class="flex items-center justify-between">
+            <h2 class="text-2xl font-bold text-black leading-snug mb-4">Новини</h2>
+            <div class="hidden md:block">
+                <button
+                    class="mt-4 px-5 py-2 bg-white text-routs-500 rounded-lg flex items-center gap-2 transition hover:bg-gray-300">
+                    Дивитись всі
+                    <span class="ml-2 text-white rounded-lg w-8 h-8 flex items-center justify-center bg-black">
+                        ↗
+                    </span>
+                </button>
+            </div>
+        </div>
 
-        <div class="flex gap-6">
-            <div class="relative w-[600px] h-[350px]  overflow-hidden">
+        <div class="flex gap-6 ">
+            <div class="relative w-150 h-87.5  overflow-hidden">
                 <img src="./img/blue.svg" alt="Декоративні точки" class="absolute w-full h-full object-cover">
                 <div class="absolute inset-0 bg-black/40 flex flex-col justify-end p-6 text-white">
                     <h3 class="text-lg font-semibold">Історія Кам'янця-Подільського</h3>
                     <div class="flex items-center justify-between mt-4">
                         <button
-                            class="px-5 py-2 bg-white text-[var(--color-routs-500)] rounded-lg flex items-center gap-2 transition hover:bg-gray-300">
+                            class="px-5 py-2 bg-white text-routs-500 rounded-lg flex items-center gap-2 transition hover:bg-gray-300">
                             Читати
-                            <span
-                                class="ml-2 bg-black text-white rounded-lg w-[32px] h-[32px] flex items-center justify-center">
+                            <span class="ml-2 bg-black text-white rounded-lg w-8 h-8 flex items-center justify-center">
                                 ↗
                             </span>
                         </button>
                     </div>
                 </div>
             </div>
-
             <div class="flex flex-col radius-4 w-153 h-35 bg-dark-0">
-                <div class="flex items-center bg-white p-4  shadow-md">
-                    <img src="./img/blue.svg" alt="Новий парк у місті" class="w-24 h-24 object-cover">
-                    <div class="ml-4">
-                        <h4 class="text-lg font-semibold">Новий парк у центрі міста</h4>
-                        <p class="text-sm text-gray-600">Міська програма екології та благоустрою...</p>
-                        <p class="text-xs text-gray-400">01 грудня, 2024 • 20</p>
+                <!--one small block-->
+                <div class="flex items-center bg-white shadow-md h-full">
+                    <img src="./img/blue.svg" alt="Новий парк у місті" class="w-49 h-27.5 object-cover pt-2 pb-2 pl-4">
+                    <div class="ml-4 w-100 h-full">
+                        <div class="pt-4 pb-4 pr-6 pl-6 gap-2">
+                            <h4 class="text-md text-dark-900 font-semibold">Новий парк у центрі міста</h4>
+                            <p class="text-sm text-dark-500">Міська програма екології та благоустрою...</p>
+                        </div>
+                        <div class="pr-6 pb-4 pl-6 gap-2">
+                            <p class="text-sm text-dark-500">01 грудня, 2024 • 20</p>
+                        </div>
+
                     </div>
                 </div>
 
 
 
 
-                <div class="hidden md:block">
-                    <button
-                        class="mt-4 px-5 py-2 bg-white text-[var(--color-routs-500)] rounded-lg flex items-center gap-2 transition hover:bg-gray-300">
-                        Дивитись всі
-                        <span
-                            class="ml-2 text-white rounded-lg w-[32px] h-[32px] flex items-center justify-center bg-black">
-                            ↗
-                        </span>
-                    </button>
-                </div>
             </div>
 
 
