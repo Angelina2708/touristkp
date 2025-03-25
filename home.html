@@ -168,7 +168,8 @@
 
         <!-- Текстовий блок -->
         <div class="relative z-10 flex flex-col items-center px-4 md:flex-grow">
-            <h2 class="text-2xl font-bold">Концерти, виставки, театральні <br> виступи – обирайте своє натхнення</h2>
+            <h2 class="text-2xl font-bold  md:text-3xl">Концерти, виставки, театральні <br> виступи – обирайте своє
+                натхнення</h2>
             <button class="mt-4 px-5 py-2 bg-white text-events-400 rounded-lg flex items-center gap-2 transition">
                 Вибрати подію
                 <span>&#8599;</span>
@@ -182,17 +183,17 @@
     </div>
 
     <!-- голубенький блок -->
-    <div class="relative bg-routs-500 rounded-2xl  flex justify-between w-321 h-69 overflow-hidden">
-        <div class="flex-1 pt-16 pr-16 pl-16 gap-8">
-            <p class="text-3xl font-bold text-base-50 font-weight-700">
+    <div class="relative bg-routs-500 rounded-2xl w-full flex justify-between md:w-321 md:h-69 md:flex-row overflow-hidden md:gap-6">
+        <div class="flex-1 pt-8 md:pt-16 pr-16 pl-16 gap-8">
+            <p class=" text-2xl md:text-3xl font-bold text-base-50 font-weight-700">
                 Від пішохідних прогулянок до <br> екскурсій на велосипеді
             </p>
-            <button class="mt-4 px-5 py-2 bg-white text-routs-800 rounded-lg flex items-center gap-2 transition">
+            <button class="mb-8 md:mb-16 mt-4 px-5 py-2 bg-white text-routs-800 rounded-xl flex items-center gap-2 transition">
                 Дивитись всі
                 <span class="ml-2 text-white rounded-lg w-8 h-8 bg-routs-500">&#8599;</span>
             </button>
         </div>
-        <div class="relative w-62.5 h-full pb-16">
+        <div class="relative w-62.5 h-full pb-16 hidden md:block">
             <img src="./img/blue.svg" alt="Декоративні точки"
                 class="absolute w-full h-full object-cover overflow-hidden">
         </div>
@@ -292,51 +293,24 @@
 
 
 
-
-
-    <div class="relative bg-events-400 rounded-2xl w-full h-auto flex flex-col items-center text-center text-white gap-6 overflow-hidden md:w-321 md:h-69 md:flex-row md:justify-between mx-auto w-[93.5%] h-[100.5%] md:w-321 md:h-69">
-    <!-- Контейнер для двох картинок (тільки для малих екранів) -->
-    <div class="flex w-full justify-center gap-4 md:hidden relative">
-        <!-- Картинка mobile-top.png (буде позаду balls.png) -->
-        <img src="./img/mobile-top.png" alt="Background" class="absolute inset-0 w-full h-full object-cover z-0 ">
-        
-        <!-- Ліва картинка -->
-        <div class="w-1/2 flex justify-center relative z-1">
-            <img src="./img/balls.png" alt="Hot Air Balloon" class="h-auto w-full ">
+    <div
+        class="relative bg-routs-500 rounded-2xl flex w-321 h-69 overflow-hidden md:flex-row flex-col items-center justify-center text-center">
+        <!-- Текстовий блок -->
+        <div class="flex flex-col items-center text-center p-8 gap-4">
+            <p class="text-3xl font-bold text-base-50">
+                Від пішохідних прогулянок до <br> екскурсій на велосипеді
+            </p>
+            <button class="mt-4 px-5 py-2 bg-white text-routs-800 rounded-lg flex items-center gap-2 transition">
+                Дивитись всі
+                <span class="ml-2 text-white rounded-lg w-8 h-8 bg-routs-500">&#8599;</span>
+            </button>
         </div>
 
-        <!-- Права картинка -->
-        <div class="w-1/2 flex justify-center relative z-1">
-            <img src="./img/balls-r.png" alt="#" class="h-auto w-full object-cover ">
+        <!-- Картинка (прихована на малих екранах, видима на md і більше) -->
+        <div class="relative w-62.5 h-full pb-16 hidden md:block">
+            <img src="./img/blue.svg" alt="Декоративні точки" class="absolute w-full h-full object-cover">
         </div>
     </div>
-
-    <!-- Ліва картинка (показується тільки на великих екранах) -->
-    <div class="hidden md:block w-auto">
-        <img src="./img/balls.png" alt="Hot Air Balloon" class="h-full w-full">
-    </div>
-
-    <!-- Текстовий блок -->
-    <div class="relative z-10 flex flex-col items-center px-4 md:flex-grow">
-        <h2 class="text-2xl font-bold">Концерти, виставки, театральні <br> виступи – обирайте своє натхнення</h2>
-        <button class="mt-4 px-5 py-2 bg-white text-events-400 rounded-lg flex items-center gap-2 transition">
-            Вибрати подію
-            <span>&#8599;</span>
-        </button>
-    </div>
-
-    <!-- Права картинка (показується тільки на великих екранах) -->
-    <div class="hidden md:block w-auto">
-        <img src="./img/balls-r.png" alt="#" class="h-full w-full object-cover">
-    </div>
-</div>
-
-
-
-
-
-
-
 
 
 </body>
