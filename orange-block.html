@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Ysabeau+Infant:wght@400;700&display=swap" rel="stylesheet">
+
+    <style type="text/tailwindcss">
+        @import url('https://fonts.googleapis.com/css2?family=Ysabeau+Infant:ital,wght@0,1..1000;1,1..1000&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+
+        @import "tailwindcss";
+
+        @theme {
+            --font-sans: "Mulish", serif;
+
+            /* Заголовки */
+            --text-heading-2xl: 4.25rem;  /* 68px / 16 = 4.25rem */
+            --text-heading-2xl--line-height: 4.625rem; /* 74px */
+
+            --text-heading-xl: 4rem; /* 64px */
+            --text-heading-xl--line-height: 4.25rem; /* 68px */
+
+            --text-heading-lg: 3.5rem; /* 56px */
+            --text-heading-lg--line-height: 3.75rem; /* 60px */
+
+            --text-heading-md: 3rem; /* 48px */
+            --text-heading-md--line-height: 3.4375rem; /* 55px */
+
+            --text-heading-sm: 2.5rem; /* 40px */
+            --text-heading-sm--line-height: 2.75rem; /* 44px */
+
+            --text-heading-xs: 2rem;
+            --text-heading-xs--line-height: 2.075rem;
+
+            /* Темні кольори (Dark) */
+            --color-dark-900: #191922; /* Чорний */
+            --color-dark-700: #2c2c34; /* Вугільний */
+            --color-dark-800: #1f1f26; /* Графітовий */
+            --color-dark-500: #6b6b77; /* Сірий */
+            --color-dark-400: #9e9ea8; /* Світло-сірий */
+            --color-dark-300: #c9c9cf; /* Перлинний */
+            --color-dark-200: #e4e4e7; /* Попелястий */
+            --color-dark-150: #efeff1; /* Блідо-сірий */
+            --color-dark-100: #f3f3f5; /* Світлий сірий */
+            --color-dark-50: #f9f9fb; /* Майже білий */
+            --color-dark-0: #ffffff; /* Білий */
+            
+            /* Основні кольори (Base) */
+            --color-base-900: #392c22; /* Темно-коричневий */
+            --color-base-800: #563f2e; /* Шоколадний */
+            --color-base-700: #835c3f; /* Коричневий */
+            --color-base-600: #ab7349; /* Карамельний */
+            --color-base-500: #c98c5e; /* Світло-коричневий */
+            --color-base-400: #dda77e; /* Капучіно */
+            --color-base-300: #edbc97; /* Персиковий */
+            --color-base-200: #f4ccae; /* Бежево-персиковий */
+            --color-base-150: #fae3d1; /* Бежевий */
+            --color-base-100: #fcecde; /* Кремовий */
+            --color-base-50: #fef5ef; /* Тілесний */
+            
+            /* Додаткові кольори (Additional) */
+            --color-additional-900: #302103; /* Темний коричневий */
+            --color-additional-800: #573105; /* Горіховий */
+            --color-additional-700: #945605; /* Бронзовий */
+            --color-additional-600: #d28004; /* Помаранчевий */
+            --color-additional-500: #eb9d14; /* Золотий */
+            --color-additional-400: #f3b13f; /* Жовтогарячий */
+            --color-additional-300: #fbcb77; /* Медовий */
+            --color-additional-200: #fcda97; /* Світло-жовтий */
+            --color-additional-150: #ffeecc; /* Пісочний */
+            --color-additional-100: #fef2d6; /* Кремово-жовтий */
+            --color-additional-50: #fff8eb; /* Молочний */
+            
+            /* Кольори для локацій (Locations) */
+            --color-locations-900: #012d1f; /* Темно-зелений */
+            --color-locations-800: #03452e; /* Хвойний */
+            --color-locations-700: #03623f; /* Глибокий зелений */
+            --color-locations-600: #007c4f; /* Смарагдовий */
+            --color-locations-500: #008c55; /* Яскраво-зелений */
+            --color-locations-400: #4daf88; /* М'ятний */
+            --color-locations-300: #8ad0b0; /* Світло-зелений */
+            --color-locations-200: #bee5d3; /* Пастельний зелений */
+            --color-locations-150: #def2e7; /* Блідо-зелений */
+            --color-locations-100: #e9f6ef; /* Льодовий зелений */
+            --color-locations-50: #f4faf7; /* Бліда м'ята */
+            
+            /* Кольори для подій (Events) */
+            --color-events-900: #461507; /* Бордовий */
+            --color-events-800: #76250d; /* Теракотовий */
+            --color-events-700: #932e10; /* Цегляний */
+            --color-events-600: #b83a14; /* Темно-червоний */
+            --color-events-500: #d95326; /* Червоний */
+            --color-events-400: #ed6a43; /* Лососевий */
+            --color-events-300: #fa8b6b; /* Персиковий */
+            --color-events-200: #fcbda6; /* Світло-кораловий */
+            --color-events-150: #fdeae2; /* Блідо-рожевий */
+            --color-events-100: #fdf1ec; /* Кремово-рожевий */
+            --color-events-50: #fef5f1; /* Пудровий */
+            
+            /* Кольори для маршрутів (Routs) */
+            --color-routs-900: #182c54; /* Темно-синій */
+            --color-routs-800: #1b3f7e; /* Синій */
+            --color-routs-700: #2356a9; /* Королівський синій */
+            --color-routs-600: #3577db; /* Яскравий синій */
+            --color-routs-500: #4295f0; /* Блакитний */
+            --color-routs-400: #60aafa; /* Світло-блакитний */
+            --color-routs-300: #93c8fd; /* Пастельний блакитний */
+            --color-routs-200: #b7d9fe; /* Айс-блакитний */
+            --color-routs-150: #e1eefe; /* Блідо-блакитний */
+            --color-routs-100: #ebf3fe; /* Небесний */
+            --color-routs-50: #f0f8ff; /* Льодовий блакитний */
+            
+            /* Кольори для турів (Tours) */
+            --color-tours-900: #4b060d; /* Вишневий */
+            --color-tours-800: #7d1220; /* Гранатовий */
+            --color-tours-700: #9e132b; /* Малиновий */
+            --color-tours-600: #ba1c31; /* Карміновий */
+            --color-tours-500: #d6293a; /* Яскраво-червоний */
+            --color-tours-400: #eb474d; /* Червоний корал */
+            --color-tours-300: #f7706e; /* Суничний */
+            --color-tours-200: #faada8; /* Світло-рожевий */
+            --color-tours-150: #fde4e2; /* Кремовий рожевий */
+            --color-tours-100: #fdedec; /* Блідо-рожевий */
+            --color-tours-50: #fef6f6; /* Пудровий рожевий */
+            --color-dark-600: #47464f; /* Темно-сірий */
+        }
+
+        @utility container {
+            padding-inline: 0.75rem;
+            margin-inline: auto;
+            max-width: 78rem;
+
+            @variant sm {
+                padding-inline: 1rem;
+            }
+        }
+
+    </style>
+    <title>Туристичний сайт</title>
+</head>
+
+<body class="flex flex-col items-center justify-center min-h-screen gap-6 p-4">
+
+    <div
+        class="relative bg-events-400 rounded-2xl w-full h-auto flex flex-col items-center text-center text-white gap-4 overflow-hidden md:flex-row md:justify-between md:h-69">
+        <!-- Контейнер для двох картинок (тільки для малих екранів) -->
+        <div class="flex w-full justify-center gap-4 md:hidden">
+            <div class="w-1/2 flex justify-center">
+                <img src="./img/balls.png" alt="Hot Air Balloon" class="h-auto w-full">
+            </div>
+            <div class="w-1/2 flex justify-center">
+                <img src="./img/balls-r.png" alt="#" class="h-auto w-full object-cover">
+            </div>
+        </div>
+
+        <!-- Ліва картинка (показується тільки на середніх і великих екранах) -->
+        <div class="hidden md:flex md:w-1/4 lg:w-1/5 h-full">
+            <img src="./img/balls.png" alt="Hot Air Balloon" class="h-full w-auto object-cover">
+        </div>
+
+        <!-- Текстовий блок -->
+        <div class="relative z-10 flex flex-col items-center px-2 md:w-1/2 text-center mb-3 md:mb-16 md:mt-16 sm:mb-8">
+            <h2 class="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold">
+                Концерти, виставки, театральні <br class="hidden sm:block"> виступи – обирайте своє натхнення
+            </h2>
+            <button
+                class="mt-2 sm:mt-6 px-3 sm:px-4 py-2 bg-white text-events-400 rounded-lg flex items-center gap-2 transition hover:bg-gray-100">
+                Вибрати подію
+                <span class="text-lg">&#8599;</span>
+            </button>
+        </div>
+
+        <!-- Права картинка (показується тільки на середніх і великих екранах) -->
+        <div class="hidden md:flex md:w-1/4 lg:w-1/5 h-full">
+            <img src="./img/balls-r.png" alt="#" class="h-full w-full object-cover">
+        </div>
+    </div>
+
+</body>
+
+</html>
